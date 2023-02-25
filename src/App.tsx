@@ -19,21 +19,21 @@ export function App() {
       <div className={styles.container}>
         <div className={styles.contentHeader}>
           {loading ? (
-            <Card title="NPS Geral" type="emoji" />
+            <Card title="NPS Geral" type="geral" />
           ) : (
             <SkeletonTheme baseColor="#363447" highlightColor="#292738">
               <Skeleton count={18} height={10} />
             </SkeletonTheme>
           )}
           {loading ? (
-            <Card title="NPS Geral" type="emoji" />
+            <Card title="Vendas fechadas" type="vendas" />
           ) : (
             <SkeletonTheme baseColor="#363447" highlightColor="#292738">
               <Skeleton count={18} height={10} />
             </SkeletonTheme>
           )}
           {loading ? (
-            <Card title="NPS Geral" type="emoji" />
+            <Card title="Meta mensal" type="metas" />
           ) : (
             <SkeletonTheme baseColor="#363447" highlightColor="#292738">
               <Skeleton count={18} height={10} />

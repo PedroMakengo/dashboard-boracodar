@@ -4,4 +4,87 @@
   padding: 29px 48px;
 
   border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card .header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 160%;
+
+  color: var(--base-white);
+}
+
+.card .body {
+  height: 35vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .body img {
+  width: 54px;
+  height: 54px;
+}
+
+.card .body span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 160%;
+
+  color: var(--base-text);
+  margin-top: 1rem;
+}
+
+.card .footer p {
+  display: flex;
+  gap: 1rem;
+}
+.card .footer span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 160%;
+
+  color: var(--base-white);
+}
+
+/* VENDAS */
+.card .footer ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.card .footer ul li {
+  gap: 0.5rem;
+  display: flex;
+}
+
+.card .footer ul li span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .footer ul li small {
+  width: 10px;
+  height: 10px;
+  background: #4a4556;
+
+  display: flex;
+
+  border-radius: 9999px;
+}
+
+@media (max-width: 780px) {
+  .card {
+    width: 100%;
+  }
 }

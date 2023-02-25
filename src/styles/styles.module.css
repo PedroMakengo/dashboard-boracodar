@@ -4,7 +4,7 @@
 
 .container {
   margin: 0 auto;
-  width: 60%;
+  width: 75%;
   height: 100%;
 
   display: flex;
@@ -16,6 +16,19 @@
 
 .contentHeader {
   display: grid;
-  grid-template-columns: 25% 29% 42%;
-  gap: 1rem;
+  grid-template-columns: 25% 29% 40%;
+  gap: 2rem;
+}
+
+@media (max-width: 780px) {
+  .app {
+    height: auto;
+  }
+  .container {
+    width: 80%;
+  }
+
+  .contentHeader {
+    grid-template-columns: 100%;
+  }
 }
